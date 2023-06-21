@@ -5,6 +5,8 @@
 12821 -> да
 23432 -> да
 */
+
+/*
 int InputNum(string message)
 {
     Console.Write(message);
@@ -20,7 +22,6 @@ int MappingNum(int number)
         number /= 10;
     }
     return tempNum;
- 
 }
 
 int num = InputNum("Введите пятизначное число: ");
@@ -29,7 +30,7 @@ if (num == backNum)
     Console.WriteLine($"Число {num} - полиндром");
 else
     Console.WriteLine($"Число {num} не является полиндромом");
-
+*/
 
 /*
 Задача 21
@@ -37,6 +38,22 @@ else
 A (3,6,8); B (2,1,-7), -> 15.84
 A (7,-5, 0); B (1,-1,9) -> 11.53
 */
+
+System.Console.Write("Введите координату xa: ");
+double xa = double.Parse(Console.ReadLine()!);
+System.Console.Write("Введите координату ya: ");
+double ya = double.Parse(Console.ReadLine()!);
+System.Console.Write("Введите координату za: ");
+double za = double.Parse(Console.ReadLine()!);
+System.Console.Write("Введите координату x: ");
+double xb = double.Parse(Console.ReadLine()!);
+System.Console.Write("Введите координату yb: ");
+double yb = double.Parse(Console.ReadLine()!);
+System.Console.Write("Введите координату zb: ");
+double zb = double.Parse(Console.ReadLine()!);
+
+double dist = Math.Round(Math.Sqrt(Math.Pow(xb - xa, 2) + Math.Pow(yb - ya, 2) + Math.Pow(zb - za, 2)), 2);
+Console.WriteLine($"Расстояние между точками: {dist}");
 
 
 /*
